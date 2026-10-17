@@ -1,0 +1,88 @@
+
+/* BarberShop V10 — capa de rediseño integral, conserva la lógica V9 */
+:root{--bg:#0b1017;--surface:#171e27;--surface2:#202936;--gold:#d8ac72;--gold2:#f2c78d;--text:#f7f4ee;--muted:#adb7c4;--border:#36414d;color-scheme:dark}
+body{background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI",Arial,sans-serif;letter-spacing:.005em}
+::selection{background:#d8ac7266;color:white}
+:focus-visible{outline:2px solid var(--gold2)!important;outline-offset:3px}
+a,button,input,select,textarea{transition:background .2s,border-color .2s,box-shadow .2s,transform .2s}
+.container{width:min(1200px,calc(100% - 56px))}
+.header{position:sticky;top:0;z-index:50;background:#0d1219ee;border-bottom:1px solid #ffffff1c;backdrop-filter:blur(18px)}
+.nav{min-height:80px;gap:16px}
+.brand{letter-spacing:1.5px;font-size:15px}
+.brand-icon{background:linear-gradient(135deg,#f0ca96,#bb8b52);color:#16120e;border-radius:13px;box-shadow:0 5px 24px #d8ac7233}
+.nav nav{gap:19px}
+.nav nav a{font-size:12px;font-weight:650;color:#cbd0d8}
+.nav nav a:hover,.nav nav a[aria-current=page]{color:var(--gold2)}
+.button,.outline-button{border-radius:11px;font-weight:800;letter-spacing:.035em;box-shadow:0 5px 20px #0003}
+.button{background:linear-gradient(135deg,#edc895,#c89a61);border-color:#e6bd85;color:#1a140e}
+.button:hover{background:linear-gradient(135deg,#f8d8ac,#e0b07a);box-shadow:0 10px 30px #d8ac7233}
+.outline-button{border-color:#887155;background:#ffffff08}
+.outline-button:hover{background:#d8ac721a}
+.eyebrow{font-size:11px;letter-spacing:.21em;font-weight:800}
+h1,h2{letter-spacing:-.04em}
+.hero{background:radial-gradient(circle at 20% 35%,#30261c,transparent 48%),#0e1219}
+.hero-grid{min-height:670px;grid-template-columns:1.05fr .95fr}
+.hero-copy{padding:100px 34px 95px 0}
+.hero h1{font-size:clamp(62px,7vw,108px);letter-spacing:-.055em;line-height:1.01}
+.hero h1 em,h2 em,.booking-title h1 em{color:var(--gold2)}
+.hero-photo{min-height:620px;position:relative;background:linear-gradient(90deg,#0e1219,transparent 32%),linear-gradient(0deg,#0e121988,transparent 42%),url('../img/interior.jpg') center/cover}
+.hero-photo:after{content:"BARBERSHOP / EST. 2026";position:absolute;right:24px;bottom:24px;padding:11px 15px;border-radius:50px;border:1px solid #ffffff33;background:#0b0e11b8;font-size:10px;letter-spacing:.2em;font-weight:800}
+.section{padding-top:105px;padding-bottom:105px}
+.service-grid{gap:22px}
+.service-card{border-radius:18px;background:#171e27;border:1px solid #37404b;box-shadow:0 16px 40px #0003;transition:transform .2s,border-color .2s}
+.service-card:hover{transform:translateY(-6px);border-color:#94734d}
+.service-card img{height:240px;filter:saturate(.8)}
+.service-card>div{padding:27px}
+.about{background:linear-gradient(120deg,#151c24,#23232a)}
+.about-grid>img{border-radius:18px;box-shadow:0 25px 55px #0005}
+.price-list>div{border-color:#343f4b;border-radius:9px;padding-left:15px;padding-right:15px}
+.price-list>div:hover{background:#d8ac7210}
+.cta{background:linear-gradient(110deg,#0d1219e8,#0d1219cf),url('../img/herramientas.jpg') center/cover}
+.footer{background:#080c12;border-color:#2a333f}
+.booking-main{background:radial-gradient(ellipse at 45% 0%,#2b251d,transparent 44%),#0c1118}
+.booking-card,.aside-panel,.aside-info{background:linear-gradient(145deg,#1b232e,#141b24);border:1px solid #37424f;border-radius:18px;box-shadow:0 18px 45px #0003}
+.booking-card{border-top:3px solid var(--gold);padding:35px}
+.field input:not([type=checkbox]),.field select,.field textarea,.client-search form input{background:#0e151d;border:1px solid #445060;border-radius:10px;color:#f8f5f0;padding:14px 15px}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px #d8ac7222}
+.aside-info{background:linear-gradient(135deg,#e8c28d,#c6965d);color:#17110d}
+.aside-photo{border-radius:18px}
+.client-main{background:radial-gradient(circle at 50% 0%,#29231c,transparent 46%),#0b1017;min-height:80vh}
+.client-heading h1{font-size:clamp(40px,5vw,68px)}
+.client-search,.client-info,.client-warning{border-radius:18px;box-shadow:0 16px 45px #0003}
+.client-search{background:linear-gradient(150deg,#1c2530,#151b24);border-color:#3b4654}
+.client-info{background:#171f2a;border-color:#3b4654}
+.client-warning{background:#33271d;border-color:#86603c}
+.booking-fields>div{border-color:#3c4654}
+.booking-note{background:#28261f}
+.admin-body{background:#0c1119;color:#f0f1f6}
+.admin-layout{grid-template-columns:255px minmax(0,1fr)}
+.admin-nav{background:#131b27;border-right:1px solid #303b49;padding:27px 18px;gap:10px;min-height:100vh;position:sticky;top:0;height:100vh;overflow-y:auto}
+.admin-nav .brand{padding:8px 8px 23px;border-bottom:1px solid #303b49;margin-bottom:13px}
+.admin-nav>.eyebrow{margin:15px 12px 5px;color:#c5b0fc}
+.admin-nav>a:not(.brand){padding:12px 14px;border-radius:11px;font-size:13px;font-weight:650;color:#b8c2d0;border:1px solid transparent}
+.admin-nav>a.admin-active,.admin-nav>a:not(.brand):hover{background:#a78bfa19;border-color:#a78bfa3a;color:#e2d5ff}
+.admin-disclaimer{margin-top:auto;padding:14px;border:1px solid #3b4655;border-radius:12px;background:#1b2531}
+.admin-content{padding:40px clamp(20px,3.5vw,60px);min-width:0;max-width:1700px}
+.admin-heading{padding-bottom:22px;border-bottom:1px solid #343f4d}
+.admin-heading h1{font-family:Inter,"Segoe UI",Arial,sans-serif;font-size:clamp(29px,3vw,43px);font-weight:800;letter-spacing:-.045em}
+.admin-heading p{color:#b2bfcd}
+.admin-demo-tag{background:#302941;border:1px solid #70588f;border-radius:50px;color:#e1d1ff;padding:8px 12px}
+.stats{gap:15px;margin:27px 0}
+.stats article{background:linear-gradient(145deg,#1e2835,#18212d);border:1px solid #3b485a;border-radius:16px;padding:22px;box-shadow:0 12px 30px #0002}
+.stats span{color:#b4c0d0}
+.stats strong{color:#dacaff;font-size:clamp(27px,3vw,38px)}
+.admin-panel{background:#18212c;border:1px solid #3b4657;border-radius:18px;padding:26px;box-shadow:0 15px 42px #0002;margin-bottom:23px}
+.admin-panel h2,.admin-toolbar h2{font-family:Inter,"Segoe UI",Arial,sans-serif;letter-spacing:-.025em}
+.admin-toolbar input,.admin-toolbar select,.v9-form input,.v9-section-head input,.v9-section-head select{background:#111925;border-color:#465469;border-radius:10px}
+.admin-panel th,.admin-panel td{border-bottom-color:#344152}
+.admin-panel th{color:#b6c1d1}
+.admin-panel td button,.v9-section-head button,.v9-form button,#v9-agregar-libre,.v9-chips button{border-radius:9px;background:#625096;border-color:#9077c7}
+.admin-panel td button:hover,.v9-section-head button:hover,.v9-form button:hover{background:#7d66b6}
+.appointment-dialog{background:#1a2432;border:1px solid #74609c;border-radius:20px}
+.calendar-appointment{border-radius:8px;box-shadow:0 4px 12px #0003}
+.v9-chip{background:#2b273d;border-color:#655b7b}
+.muted{color:#afbdce}
+@media(max-width:1120px){.nav{flex-wrap:wrap;padding:12px 0}.nav nav{order:3;width:100%;justify-content:center;gap:17px;flex-wrap:wrap;padding-bottom:5px}}
+@media(max-width:900px){.admin-layout{grid-template-columns:1fr}.admin-nav{position:relative;min-height:0;height:auto;flex-direction:row;flex-wrap:wrap;gap:6px;padding:15px}.admin-nav .brand{width:100%;padding:4px 5px 12px;margin:0}.admin-nav>.eyebrow,.admin-disclaimer{display:none}.admin-nav>a:not(.brand){font-size:12px;padding:9px 10px}.admin-content{padding:24px 18px}.hero-grid{grid-template-columns:1fr}.hero-copy{padding:75px 0}.hero-photo{min-height:360px}}
+@media(max-width:620px){.container{width:calc(100% - 32px)}.nav nav{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;gap:16px;padding-bottom:8px}.nav nav a{font-size:12px}.nav>.button,.nav>.outline-button{padding:10px;font-size:11px}.hero h1{font-size:clamp(52px,12vw,77px)}.hero-copy{padding:62px 0}.hero-photo{min-height:300px}.section{padding-top:68px;padding-bottom:68px}.service-grid{grid-template-columns:1fr}.booking-card{padding:22px 17px}.stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.stats article{padding:15px}.stats strong{font-size:27px}.admin-panel{padding:17px}.admin-heading h1{font-size:30px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}

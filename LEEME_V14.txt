@@ -1,0 +1,11 @@
+BARBERSHOP V14 — DESGLOSE POR PROFESIONAL
+
+Panel del barbero: cada profesional muestra sus citas, servicio e importe, además del valor realizado del día.
+Administración > Pagos: nuevo desglose por profesional y columna Barbero en cada servicio completado.
+No modifica reservas anteriores ni la clave localStorage.
+
+ATENCIÓN: las citas de A y B en las capturas son distintas; ambos tienen una cita completada.
+El selector de barberos es solo una simulación, NO autenticación. El acceso real requiere backend y permisos.
+Los pagos siguen siendo de demostración y no se acredita dinero.
+
+Instalación: reemplazar archivos del proyecto conservando .git. Abrir con Live Server y refrescar Ctrl+F5.

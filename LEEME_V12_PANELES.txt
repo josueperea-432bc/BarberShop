@@ -1,0 +1,12 @@
+BARBERSHOP V12 — PANELES SEPARADOS
+
+CLIENTES: index.html, formulario.html, mis-citas.html.
+PERSONAL: barbero.html (abrir directamente, sin enlace público).
+ADMINISTRACIÓN: admin.html (abrir directamente, sin enlace público).
+
+Se quitaron los enlaces de Barberos y Panel demo de la navegación pública.
+Los archivos de personal siguen funcionando por separado.
+IMPORTANTE: ocultar enlaces NO es seguridad. Sin login/backend, quien conozca la URL puede abrir los paneles.
+Para producción implementar autenticación y permisos en servidor.
+
+Instalación: copiar el contenido en la carpeta BarberShop sin borrar .git. No se ha subido a GitHub.

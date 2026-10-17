@@ -1,0 +1,21 @@
+BARBERSHOP V12 — PAGO DESPUÉS DEL CORTE (PROTOTIPO)
+
+FLUJO DE PRUEBA
+1. Crear reservación en formulario.html.
+2. Abrir barbero.html y seleccionar profesional y fecha.
+3. Confirmar -> Iniciar -> Completar el servicio.
+4. En mis-citas.html, buscar con código y teléfono.
+5. Solo al estar Completada aparece el selector de pago.
+6. Transferencia SPEI crea únicamente una solicitud de DEMOSTRACIÓN.
+7. En admin.html -> Pagos se muestra la solicitud de prueba y 0 ingresos acreditados.
+
+IMPORTANTE
+NO procesa transferencias, NO genera CLABE, NO acredita pagos y NO contiene una
+pasarela de pagos real. No presentar solicitudes DEMO como pagos efectuados.
+Para pagos reales: backend con credenciales privadas, base de datos, API de proveedor
+que admita SPEI, webhook verificado, comprobación de importe/orden y control de idempotencia.
+Nunca marcar un pago como acreditado desde localStorage o un botón del cliente.
+
+INSTALACIÓN
+Copiar todos los archivos a la carpeta del proyecto, sin borrar .git.
+Usar Live Server. Sin push a GitHub.

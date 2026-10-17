@@ -1,0 +1,9 @@
+BARBERSHOP V13 — INDICADORES CONSISTENTES
+
+Pagos y Estadísticas muestran los mismos conceptos contables.
+El saldo sin acreditar incluye pagos pendientes y transferencias de prueba.
+No se acreditan pagos reales: ingresos acreditados = $0.
+Se actualizan los paneles al modificar datos en la misma pestaña, al regresar a ella y al recibir cambios de almacenamiento.
+
+Instalar: copiar archivos sobre el proyecto sin borrar .git. Probar con Live Server.
+Sin backend ni autenticación. No usar con clientes reales.

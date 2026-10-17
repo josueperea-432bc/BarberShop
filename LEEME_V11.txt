@@ -1,0 +1,9 @@
+BARBERSHOP V11 — OPCIONES DE PAGO DEL CLIENTE
+
+En Mis citas, consultar una cita con código y teléfono. Ver importe del servicio y seleccionar preferencia: efectivo, tarjeta en sucursal o transferencia acordada con la barbería.
+
+PRECIOS DEMOSTRATIVOS: Corte $150 MXN; Barba $100 MXN; Combo $220 MXN.
+
+IMPORTANTE: NO HAY COBROS REALES. No se recaban tarjetas, CLABE ni comprobantes. El estado de pago permanece Pendiente; solo el personal autorizado debería marcar Pagado cuando exista backend.
+
+Instalar copiando el ZIP sobre el proyecto local sin borrar .git. Usar Live Server. Los datos están en localStorage, sin autenticación ni sincronización. No se hizo push a GitHub.

@@ -1,0 +1,8 @@
+BARBERSHOP V10 — REDISEÑO VISUAL INTEGRAL
+Páginas: index.html, formulario.html, mis-citas.html, admin.html, barbero.html.
+Cambios: tema carbón/dorado/violeta, diseño responsivo, formularios, navegación,
+tarjetas, paneles, calendario y tablas. Se conserva la lógica de V9.
+Instalación: copiar los archivos a tu proyecto BarberShop conservando .git;
+abrir con Live Server desde VS Code. No se ha realizado ningún push.
+ATENCIÓN: prototipo académico con localStorage, sin autenticación ni servidor.
+No usar datos personales ni citas reales.

@@ -1,0 +1,19 @@
+BarberShop V9 — DEMOSTRACIÓN ACADÉMICA LOCAL
+
+Páginas:
+- index.html: portada
+- formulario.html: solicitud de reservación y disponibilidad según horario y descanso del profesional
+- mis-citas.html: consulta por código y teléfono
+- admin.html: agenda global, solicitudes, profesionales, indicadores y rendimiento
+- barbero.html: agenda por profesional, cambios de estado y días libres
+
+Inicia con Live Server en Visual Studio Code (recomendado) para usar un origen local consistente.
+La información se guarda en localStorage del navegador (claves barbershop_demo_citas_v3 y barbershop_demo_barberos_v9).
+Las citas existentes de V8 se conservan en el mismo navegador y origen.
+La asignación de roles es visual, NO hay autenticación ni permisos reales. No uses datos reales.
+Los ingresos mostrados son estimaciones de servicios completados, NO cobros verificados.
+No hay backend ni sincronización entre usuarios/dispositivos, ni prevención de colisiones concurrentes.
+Antes de publicar para clientes reales: backend, base de datos, transacciones, autenticación y control de acceso.
+
+Instalación: copia los archivos del ZIP en la raíz del proyecto BarberShop sin borrar .git.
+No subas nada a GitHub hasta revisar la versión local.
