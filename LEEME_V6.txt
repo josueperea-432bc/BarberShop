@@ -1,0 +1,7 @@
+BARBERSHOP V6 — DISPONIBILIDAD LOCAL
+
+Se conservó el panel administrativo V5. El formulario ahora muestra horarios de 09:00 a 19:00 cada 30 minutos, oculta horarios pasados y bloquea coincidencias para el mismo profesional en solicitudes no canceladas. Elegir «Cualquier profesional» bloquea el horario si existe una cita con cualquier profesional (regla conservadora de demostración).
+
+ATENCIÓN: No existe backend ni sincronización entre equipos. No es un sistema real de reservas ni garantía de disponibilidad. El código no implementa duraciones distintas por servicio ni horarios laborales reales.
+
+Para instalar: copiar el contenido de esta carpeta sobre la carpeta local BarberShop, manteniendo .git y la rama desarrollo-barbershop. Abrir formulario.html y admin.html en el mismo navegador. No ejecutar git push.

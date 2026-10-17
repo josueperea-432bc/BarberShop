@@ -1,0 +1,6 @@
+BarberShop V4
+Copiar el contenido de esta carpeta a la raíz del repositorio, conservando .git.
+Abrir index.html, formulario.html, mis-citas.html y admin.html en el mismo navegador.
+El cliente recibe un código de reserva para consultar/cancelar/confirmar localmente.
+El calendario administrativo muestra las citas por semana. No hay autenticación, servidor ni sincronización.
+NO USAR DATOS REALES. No ejecutar git push hasta revisar.

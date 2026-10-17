@@ -1,0 +1,11 @@
+BARBERSHOP V7 — MIS CITAS
+
+Se basa en V6 y conserva el calendario de V5 y la disponibilidad local de V6.
+
+Cambios: consulta con código y teléfono, ficha detallada, confirmación de interés del cliente (sin cambiar el estado administrativo), cancelación con confirmación, copia de código cuando el navegador lo permite y diseño adaptable.
+
+Pruebas: 1. Registrar solicitud ficticia en formulario.html. 2. Abrir mis-citas.html en el mismo navegador. 3. Introducir código y teléfono exactos. 4. Confirmar interés; el estado debe seguir Pendiente. 5. Cancelar; debe mostrarse Cancelada y liberar el horario. 6. Verificar la cita en admin.html.
+
+LIMITACIONES: localStorage no es seguro, no sincroniza dispositivos ni autentica clientes. Código + teléfono solo sirven para demostración; no desplegar como sistema real. No se envían notificaciones.
+
+Instalación: copiar los archivos sobre la carpeta BarberShop local sin tocar .git. Permanecer en desarrollo-barbershop. No hacer push.

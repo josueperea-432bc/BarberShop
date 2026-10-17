@@ -1,0 +1,1 @@
+BarberShop V5 — Agenda administrativa. Copiar archivos en la carpeta local BarberShop, conservando .git. Abrir admin.html en Chrome. El calendario usa los registros de localStorage de V4 (misma clave). Filtro por profesional, navegación semanal y detalle al seleccionar una cita. No es una aplicación con autenticación o servidor. No subir a GitHub hasta validar.

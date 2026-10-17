@@ -1,0 +1,22 @@
+BarberShop V8 INTEGRADO — 17 octubre 2026
+
+Incluye página pública, reservas, Mis citas y calendario administrativo.
+Mejoras: duraciones de servicios (corte 30 min, barba 30 min, combo 60 min),
+validación de intervalos superpuestos, asignación automática de profesional disponible,
+calendario en intervalos de 30 min, consulta por código + teléfono y cancelación.
+
+INSTALACIÓN: copia el contenido de esta carpeta a tu repositorio local en la rama
+desarrollo-barbershop. NO reemplaces ni elimines .git. No hagas git push hasta revisar.
+Abre index.html, formulario.html, mis-citas.html y admin.html en el mismo navegador.
+
+PRUEBAS:
+1) Solicita un combo 10:00 con Profesional A en fecha futura.
+2) Verifica que Profesional A no pueda recibir corte a las 10:30 ese día.
+3) Verifica que Profesional B sí pueda reservar 10:30.
+4) Consulta la primera cita con código y teléfono y cancélala.
+5) Verifica que el intervalo vuelve a estar disponible.
+6) Comprueba el calendario y filtro por profesional en admin.html.
+
+AVISO: prototipo académico con localStorage. No existe backend, autenticación,
+sincronización entre dispositivos, ni control real de concurrencia. No uses datos reales.
+Los precios y profesionales son ilustrativos.
